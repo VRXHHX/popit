@@ -46,9 +46,19 @@ Section:NewButton("Buy Mommeh Long Legs", "Buy Mommeh Long Legs", function()
 
     }
 
+Section:NewButton("Buy Baby Mermaid", "Buy Baby Mermaid", function()
+
+    local args = {
+
+        [1] = "Baby Mermaid"
+
+    }
+
     game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
 
-end)
+
+
+
 
 local Section = Tab:NewSection("Crash Server Spam click or Download Auto clicker")
 
